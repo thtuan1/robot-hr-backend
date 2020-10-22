@@ -1,61 +1,78 @@
 package fpt.fis.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import java.util.List;
+import java.util.Date;
 
 @Entity
 public class User {
     @Id
-    private int id;
-    private String name;
-    private String phoneNumber;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private  Long Id;
+    private  String userName;
+    private  String password;
+    private Date createdTime;
+    private  Date updatedTime;
+    private  String nguoiTao;
+    private  String nguoiUpdate;
 
-    @OneToMany
-    private List<NguoiThan> nguoiThans;
-
-    @OneToOne
-    private ExtraInformation extraInformation;
-
-    public int getId() {
-        return id;
+    public Long getId() {
+        return Id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(Long id) {
+        Id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public List<NguoiThan> getNguoiThans() {
-        return nguoiThans;
+
+
+    public String getNguoiTao() {
+        return nguoiTao;
     }
 
-    public void setNguoiThans(List<NguoiThan> nguoiThans) {
-        this.nguoiThans = nguoiThans;
+    public void setNguoiTao(String nguoiTao) {
+        this.nguoiTao = nguoiTao;
     }
 
-    public ExtraInformation getExtraInformation() {
-        return extraInformation;
+    public String getNguoiUpdate() {
+        return nguoiUpdate;
     }
 
-    public void setExtraInformation(ExtraInformation extraInformation) {
-        this.extraInformation = extraInformation;
+    public Date getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(Date createdTime) {
+        this.createdTime = createdTime;
+    }
+
+    public Date getUpdatedTime() {
+        return updatedTime;
+    }
+
+    public void setUpdatedTime(Date updatedTime) {
+        this.updatedTime = updatedTime;
+    }
+
+    public void setNguoiUpdate(String nguoiUpdate) {
+        this.nguoiUpdate = nguoiUpdate;
     }
 }

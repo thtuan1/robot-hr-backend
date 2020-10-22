@@ -1,15 +1,11 @@
-package fpt.fis.model;
+package fpt.fis.dto;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Date;
 
-@Entity
-public class History {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class HistoryDTO {
     private Long id;
     private String content;
     private  String createdUser;
@@ -18,22 +14,6 @@ public class History {
     private  String objectID;
     private String ActionType;
     private  Boolean Seen;
-
-    public Date getCreatedTime() {
-        return createdTime;
-    }
-
-    public Boolean getSeen() {
-        return Seen;
-    }
-
-    public void setSeen(Boolean seen) {
-        Seen = seen;
-    }
-
-    public void setCreatedTime(Date createdTime) {
-        this.createdTime = createdTime;
-    }
 
     public Long getId() {
         return id;
@@ -75,6 +55,22 @@ public class History {
         this.objectID = objectID;
     }
 
+    public Date getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(Date createdTime) {
+        this.createdTime = createdTime;
+    }
+
+    public Boolean getSeen() {
+        return Seen;
+    }
+
+    public void setSeen(Boolean seen) {
+        Seen = seen;
+    }
+
     public String getActionType() {
         return ActionType;
     }
@@ -82,4 +78,5 @@ public class History {
     public void setActionType(String actionType) {
         ActionType = actionType;
     }
+
 }

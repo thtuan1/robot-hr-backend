@@ -1,26 +1,31 @@
-package fpt.fis.model;
+package fpt.fis.dto;
 
-import javax.naming.Name;
-import javax.persistence.*;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Date;
 
-@Entity
-public class ExtraInformation {
+public class extraInformationDTO {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
     private String phongBan;
     private String soHDLD;
+    private String loaiHD;
+    private String heSoLuong;
 
 
     public Long getId() {
         return Id;
     }
 
+
     public void setId(Long id) {
         Id = id;
     }
 
+    private String jodCode;
+    private Date contractendDate;
     public String getPhongBan() {
         return phongBan;
     }
@@ -69,8 +74,6 @@ public class ExtraInformation {
         this.contractendDate = contractendDate;
     }
 
-    private String loaiHD;
-    private String heSoLuong;
-    private String jodCode;
-    private Date contractendDate;
+
+
 }
