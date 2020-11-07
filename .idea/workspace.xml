@@ -23,12 +23,16 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:tuanth9" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ee2b8f-9065-4967-af8d-b428dd835639" name="Default Changelist" comment="" />
+    <list default="true" id="a8ee2b8f-9065-4967-af8d-b428dd835639" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +93,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/u-services-anhpdn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -145,7 +149,8 @@
       <workItem from="1604420890084" duration="11328000" />
       <workItem from="1604461597997" duration="2310000" />
       <workItem from="1604477561771" duration="1707000" />
-      <workItem from="1604731107878" duration="3146000" />
+      <workItem from="1604731107878" duration="3458000" />
+      <workItem from="1604735145027" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="alll">
       <created>1603382174313</created>
@@ -192,7 +197,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="tuanth9" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
