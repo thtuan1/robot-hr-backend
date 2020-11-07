@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RobotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="fis.main" />
+    <extension name="coverage" sample_coverage="false" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="fpt.fis.RobotApplication" />
+    <option name="DEBUG_MODE" value="true" />
+    <option name="HIDE_BANNER" value="true" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
